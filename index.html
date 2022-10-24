@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Pacman</title>
+    <link rel="stylesheet" href="design/style.css" />
+    <script type="module" src="source/Main.js"></script>
+</head>
+
+<body>
+    <div id="container" class="mainScreen">
+        <canvas class="board"></canvas>
+        <canvas class="game"></canvas>
+        <canvas class="screen"></canvas>
+
+        <div id="teste" class="main display">
+            <ul>
+                <li>
+                    <a href="#" data-action="play"><u style="color: red;">I</u>niciar Game</a>
+                </li>
+                <li>
+                    <a href="#" data-action="highScores"><u style="color: rgb(20, 150, 236);">P</u>ontos</a>
+                </li>
+                <li>
+                    <a href="#" data-action="help"><u style="color: orange;">C</u>ontroles</a>
+                </li>
+            </ul>
+            <div class="audio" data-action="sound">
+                <div class="waves">
+                    <div></div><div></div>
+                    <div></div><div></div>
+                </div>
+                <div class="triangle"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="input display">
+            <h2 id="over">Game Over</h2>
+            <p>Seu nome:</p>
+            <input type="text" />
+            <a href="#" data-action="save">Salvar</a>
+            <a class="restart" href="#" data-action="mainScreen"><u>N</u>ovo Jogo</a>
+        </div>
+
+        <div class="high display">
+            <h2 >Pontos</h2>
+            <div class="scores"></div>
+            <div class="none" style="font-family: Whimsy TT; src:url('./fonts/whimsytt.ttf')">Não há pontos</div>
+            <a class="restore" href="#" data-action="restore"><u>R</u>estaurar</a>
+            <a class="back" href="#" data-action="mainScreen"><u>V</u>oltar</a>
+        </div>
+
+        <div class="controls display">
+            <h1>Controles</h1>
+            <ol>
+                <li><span>Use as setas ou as teclas "W","A","S","D" para mover.</span></li>
+                <li><span>"Espaço" ou "P" vai pausar o jogo.</span></li>
+                <li><span>"M" liga e desliga o som</span></li>
+                <li><span>Use os links ou teclas (letras sublinhadas) para navegar pelas telas.</span></li>
+            </ol>
+            <a href="#" data-action="mainScreen"><u>V</u>oltar</a>
+        </div>
+    </div>
+</body>
+</html>
